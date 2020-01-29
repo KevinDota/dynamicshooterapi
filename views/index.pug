@@ -3,11 +3,12 @@ extends default
 block content
   div.container
   
-    each person in people
+    each enemy in enemies
       div.person
-        div.person-image(style=`background: url('/images/${person.imgSrc}') top center
-        no-repeat; background-size: cover;`)
+        //div.person-image(style=`background: url('/images/${person.imgSrc}') top center
+        //no-repeat; background-size: cover;`)
         h2.person-name
-          | #{person.firstname} #{person.lastname}
-        a(href=`/profile?id=${person.id}`)
-          | View Profile
+          | #{enemy.name}
+          p #{enemy.health}
+        //a(href=`/profile?id=${person.id}`)
+        //  | View Profile

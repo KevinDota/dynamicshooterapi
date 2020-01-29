@@ -67,7 +67,11 @@ exports.list_all_enemies = function (req, res) {
     Enemy.find({}, function(err, enemy) {
         if (err) {
             res.json(err);
+        }else {
+            res.render('index', {
+                title: 'Enemies of the Shooting Stars',
+                enemies: enemy
+            });
         }
-        res.json(enemy);
     });
 }

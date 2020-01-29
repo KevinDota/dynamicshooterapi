@@ -19,8 +19,9 @@ exports.register = function(req, res){
     new_player.save(function(err, player) {
         if (err) {
             res.json(err);
+        }else {
+            res.json("Player registered!");
         }
-        res.json("Player registered!");
     });
 }
 
