@@ -6,12 +6,15 @@ mongoose = require('mongoose'),
 playerModel = require('./api/models/player'),
 enemyModel = require('./api/models/enemy'),
 bodyParser = require('body-parser');
+var path = require('path');
 
 mongoose.Promise = global.Promise;
 mongoose.connect(process.env.MONGO_DB);
 
                             //this we use for images style sheets or fonts that will be static
 app.set('view engine', 'pug');
+
+var dir = path.join(__dirname, 'public');
 
 // serve static files from the `public` folder
 app.use(express.static(__dirname + '/public'));

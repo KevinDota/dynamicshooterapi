@@ -19,7 +19,10 @@ var enemySchema = new schema({
     positionY: {
         type: Number,
         require: true
-    }  
+    },
+    image: {
+        type: String
+    }
 });
 
 module.exports = mongoose.model('Enemy', enemySchema);

@@ -5,8 +5,8 @@ block content
   
     each enemy in enemies
       div.person
-        //div.person-image(style=`background: url('/images/${person.imgSrc}') top center
-        //no-repeat; background-size: cover;`)
+        div.person-image(style=`background: url('/images/${enemy.image}') top center
+        no-repeat; background-size: cover;`)
         h2.person-name
           | #{enemy.name}
           p #{enemy.health}
