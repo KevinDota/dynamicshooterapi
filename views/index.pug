@@ -10,5 +10,5 @@ block content
         h2.person-name
           | #{enemy.name}
           p #{enemy.health}
-        //a(href=`/profile?id=${person.id}`)
-        //  | View Profile
+        a(href=`/profile?id=${enemy._id}`)
+          | View Profile

@@ -8,10 +8,8 @@ block content
     no-repeat; background-size: cover;`)
     div.profile-details
       h1.profile-name
-        | #{person.firstname} #{person.lastname}
+        | #{enemy.name}
       h2.profile-tagline
-        | #{person.tagline}
+        | His Health: #{enemy.health}
       p.profile-bio
-        | #{person.bio}
-      a.button.button-twitter(href=`${person.twitter}`)
-        | Follow me on Twitter
+        | PositionX: #{enemy.positionX} PositionY:#{enemy.positionY}

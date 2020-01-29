@@ -131,3 +131,17 @@ body {
   background-color: #659AF1;
   border-radius: 5px;
 }
+
+@media (max-width:1080px) {
+  .container {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width:540px) {
+  .container {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
